@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaClock, FaFacebook, FaInstagram, FaTwitter, FaWhatsapp } from 'react-icons/fa';
-import styles from './Contact.module.css';
+import styles from './contact.module.css';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
