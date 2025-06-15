@@ -1,0 +1,444 @@
+/* Contact.module.css */
+
+.contactContainer {
+  margin-top: 80px; /* Compensar header fijo */
+  color: #000;
+}
+
+/* Container común */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Hero Section */
+.heroSection {
+  background: #000;
+  color: #fff;
+  padding: 6rem 0;
+  text-align: center;
+}
+
+.heroContent {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.heroTitle {
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  letter-spacing: -2px;
+}
+
+.heroSubtitle {
+  font-size: 1.3rem;
+  opacity: 0.8;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Main Section */
+.mainSection {
+  padding: 6rem 0;
+  background: #fff;
+}
+
+.contentGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #000;
+}
+
+.sectionSubtitle {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 3rem;
+  line-height: 1.6;
+}
+
+/* Form Section */
+.formSection {
+  background: #f8f9fa;
+  padding: 3rem;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #000;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.input,
+.textarea {
+  padding: 1rem;
+  border: 2px solid #e9ecef;
+  border-radius: 4px;
+  font-size: 1rem;
+  background: #fff;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.input:focus,
+.textarea:focus {
+  outline: none;
+  border-color: #000;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.submitButton {
+  background: #000;
+  color: #fff;
+  padding: 1.25rem 2rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 1rem;
+}
+
+.submitButton:hover:not(:disabled) {
+  background: #333;
+  transform: translateY(-2px);
+}
+
+.submitButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.successMessage {
+  background: #d4edda;
+  color: #155724;
+  padding: 1rem;
+  border-radius: 4px;
+  border: 1px solid #c3e6cb;
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Info Section */
+.infoSection {
+  padding: 3rem;
+}
+
+.contactCards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.contactCard {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 2rem;
+  background: #fff;
+  border: 2px solid #f8f9fa;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.contactCard:hover {
+  border-color: #000;
+  transform: translateY(-2px);
+}
+
+.cardIcon {
+  font-size: 1.5rem;
+  color: #000;
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 50%;
+  min-width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardContent {
+  flex: 1;
+}
+
+.cardTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #000;
+}
+
+.cardInfo {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+  color: #000;
+}
+
+.cardDetail {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Social Section */
+.socialSection {
+  border-top: 1px solid #e9ecef;
+  padding-top: 3rem;
+}
+
+.socialTitle {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #000;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 1rem;
+}
+
+.socialLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background: #f8f9fa;
+  color: #000;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.socialLink:hover {
+  background: #000;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* Map Section */
+.mapSection {
+  padding: 6rem 0;
+  background: #f8f9fa;
+}
+
+.mapContainer {
+  margin-top: 3rem;
+}
+
+.mapPlaceholder {
+  background: #fff;
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  padding: 4rem 2rem;
+  text-align: center;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mapIcon {
+  font-size: 3rem;
+  color: #000;
+  margin-bottom: 1.5rem;
+}
+
+.mapText {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: #000;
+  line-height: 1.5;
+}
+
+.mapSubtext {
+  color: #666;
+  font-style: italic;
+}
+
+/* FAQ Section */
+.faqSection {
+  padding: 6rem 0;
+  background: #fff;
+}
+
+.faqGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.faqItem {
+  padding: 2rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+  transition: all 0.3s ease;
+}
+
+.faqItem:hover {
+  border-color: #000;
+  transform: translateY(-2px);
+}
+
+.faqQuestion {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #000;
+}
+
+.faqAnswer {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+  
+  .heroSubtitle {
+    font-size: 1.1rem;
+  }
+  
+  .contentGrid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .formRow {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .formSection,
+  .infoSection {
+    padding: 2rem;
+  }
+  
+  .sectionTitle {
+    font-size: 2rem;
+  }
+  
+  .contactCard {
+    padding: 1.5rem;
+  }
+  
+  .cardIcon {
+    min-width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+  }
+  
+  .socialLinks {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .faqGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .mapPlaceholder {
+    padding: 3rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contactContainer {
+    margin-top: 70px;
+  }
+  
+  .container {
+    padding: 0 1rem;
+  }
+  
+  .heroTitle {
+    font-size: 2rem;
+  }
+  
+  .heroSection {
+    padding: 4rem 0;
+  }
+  
+  .mainSection,
+  .mapSection,
+  .faqSection {
+    padding: 4rem 0;
+  }
+  
+  .formSection,
+  .infoSection {
+    padding: 1.5rem;
+  }
+  
+  .contactCard {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+  }
+  
+  .cardIcon {
+    margin: 0 auto;
+  }
+  
+  .socialLinks {
+    gap: 0.5rem;
+  }
+  
+  .socialLink {
+    width: 45px;
+    height: 45px;
+  }
+}
