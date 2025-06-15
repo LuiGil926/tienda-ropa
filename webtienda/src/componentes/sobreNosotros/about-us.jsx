@@ -1,4 +1,4 @@
-import styles from './AboutUs.module.css';
+import styles from './aboutus.module.css';
 
 import { Link } from 'react-router-dom';
 import { useEffect, useRef } from 'react';
