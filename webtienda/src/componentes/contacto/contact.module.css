@@ -3,6 +3,7 @@
 .contactContainer {
   margin-top: 80px; /* Compensar header fijo */
   color: #000;
+  overflow: hidden;
 }
 
 /* Container común */
